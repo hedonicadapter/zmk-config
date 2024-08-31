@@ -46,10 +46,10 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&trans  &none           &kp UP          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                                  &trans  &trans  &trans  &trans  &trans  &trans
-&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT     &bt BT_SEL 4  &trans                                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans               &none           &kp UP          &bt BT_SEL 0    &bt BT_SEL 1          &bt BT_SEL 2                                                   &trans  &trans  &trans     &trans  &trans  &trans
+&none                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT       &bt BT_SEL 4          &trans                                                         &trans  &trans  &trans     &trans  &trans  &trans
+&kp SV_LEFT_BRACKET  &kp LESS_THAN   &kp SV_SLASH    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &trans        &trans  &trans          &trans           &trans  &trans  &trans  &trans     &trans  &trans  &trans
+                                                     &kp LCTRL       &trans                &trans        &trans  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &trans  &trans  &trans  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -57,10 +57,10 @@
 
         right {
             bindings = <
-&kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans
-&none   &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp N0                &kp N1  &kp N2         &kp N3           &kp N4                 &kp N5                                                         &kp N6  &kp N7  &kp N8     &kp N9  &trans  &trans
+&none                 &none   &none          &none            &none                  &none                                                          &trans  &trans  &trans     &trans  &trans  &trans
+&kp SV_RIGHT_BRACKET  &kp GT  &kp BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp SV_ACUTE  &trans  &trans          &trans           &trans  &trans  &trans  &trans     &trans  &trans  &trans
+                                             &kp LCTRL        &trans                 &trans        &trans  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &trans  &trans  &trans  &kp RCTRL
             >;
         };
     };
