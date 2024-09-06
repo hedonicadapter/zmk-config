@@ -11,6 +11,7 @@
 &led_strip {
     // chain-length = <6>;
     // chain-length = <31>; // Uncomment if using both per-key and underglow LEDs
+
     chain-length = <24>; // Uncomment if using only per-key LEDs.
 };
 
@@ -43,10 +44,10 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&trans               &none           &kp UP          &none           &none                 &none                                                           &trans  &trans  &trans     &trans  &trans  &trans
-&none                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT       &kp EQUAL             &kp AMPERSAND                                                   &trans  &trans  &trans     &trans  &trans  &trans
-&kp SV_LEFT_BRACKET  &kp LESS_THAN   &kp SV_SLASH    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp APOS       &trans  &trans          &trans           &trans  &trans  &trans  &trans     &trans  &trans  &trans
-                                                     &kp LCTRL       &trans                &trans         &trans  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &trans  &trans  &trans  &kp RCTRL
+&trans               &none             &none           &kp UP             &none                    &none                                                           &trans  &trans  &trans     &trans  &trans  &trans
+&none                &none             &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT                &kp AMPERSAND                                                   &trans  &trans  &trans     &trans  &trans  &trans
+&kp SV_LEFT_BRACKET  &kp SV_LESS_THAN  &kp SV_SLASH    &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &kp SV_ACUTE   &trans  &trans          &trans           &trans  &trans  &trans  &trans     &trans  &trans  &trans
+                                                       &kp LEFT_ALT       &kp LCTRL                &trans         &trans  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &trans  &trans  &trans  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
