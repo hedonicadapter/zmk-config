@@ -42,10 +42,10 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&trans          &none             &none             &kp UP          &none              &none                                                               &trans         &trans     &trans         &trans  &trans  &trans
-&none           &none             &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT          &kp AMPERSAND                                                       &trans         &trans     &trans         &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp SV_LESS_THAN  &kp SV_SLASH    &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &trans  &trans     &trans         &trans   &trans         &trans     &trans         &trans  &trans  &kp RIGHT_SHIFT
-                                                    &kp LEFT_ALT    &kp LCTRL          &kp LEFT_GUI             &trans  &kp ENTER  &kp BACKSPACE  &kp ESC  &kp RIGHT_GUI  &kp RCTRL  &kp RIGHT_ALT
+&trans          &none             &none             &kp UP          &none              &none                                                                     &trans         &trans     &trans         &trans  &trans  &trans
+&none           &none             &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT          &kp AMPERSAND                                                             &trans         &trans     &trans         &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp SV_LESS_THAN  &kp SV_SLASH    &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &trans        &trans     &trans         &trans   &trans         &trans     &trans         &trans  &trans  &kp RIGHT_SHIFT
+                                                    &kp LEFT_ALT    &kp LCTRL          &kp LEFT_GUI             &kp SV_SPACE  &kp ENTER  &kp BACKSPACE  &kp ESC  &kp RIGHT_GUI  &kp RCTRL  &kp RIGHT_ALT
             >;
         };
 
