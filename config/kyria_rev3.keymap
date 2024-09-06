@@ -27,10 +27,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E         &kp R      &kp T                                                       &kp Y              &kp U      &kp I          &kp O       &kp P            &kp SV_A_RING
-&kp TAB         &kp A  &kp S  &kp D         &kp F      &kp G                                                       &kp H              &kp J      &kp K          &kp L       &kp SV_O_UMLAUT  &kp SV_A_UMLAUT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V      &kp B         &none      &mo 1      &mo 2          &none    &kp N              &kp M      &kp SV_COMMA   &kp SV_DOT  &kp SV_MINUS     &kp RIGHT_SHIFT
-                              &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp SPACE  &kp ENTER  &kp BACKSPACE  &kp ESC  &kp DOUBLE_QUOTES  &kp RCTRL  &kp RIGHT_ALT
+&kp ESC         &kp Q  &kp W  &kp E         &kp R      &kp T                                                       &kp Y          &kp U      &kp I          &kp O       &kp P            &kp SV_A_RING
+&kp TAB         &kp A  &kp S  &kp D         &kp F      &kp G                                                       &kp H          &kp J      &kp K          &kp L       &kp SV_O_UMLAUT  &kp SV_A_UMLAUT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V      &kp B         &none      &mo 1      &mo 2          &none    &kp N          &kp M      &kp SV_COMMA   &kp SV_DOT  &kp SV_MINUS     &kp RIGHT_SHIFT
+                              &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp SPACE  &kp ENTER  &kp BACKSPACE  &kp ESC  &kp RIGHT_GUI  &kp RCTRL  &kp RIGHT_ALT
             >;
         };
 
@@ -42,19 +42,19 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&trans          &none             &none             &kp UP          &none              &none                                                                     &trans  &trans     &trans         &trans  &trans  &trans
-&none           &none             &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT          &kp AMPERSAND                                                             &trans  &trans     &trans         &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp SV_LESS_THAN  &kp SV_SLASH    &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &trans  &trans          &trans           &trans  &trans  &trans     &trans         &trans  &trans  &kp RIGHT_SHIFT
-                                                    &kp LEFT_ALT    &kp LCTRL          &trans                   &trans  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &trans  &trans  &kp RCTRL  &kp RIGHT_ALT
+&trans          &none             &none             &kp UP          &none              &none                                                              &trans  &trans     &trans         &trans  &trans  &trans
+&none           &none             &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT          &kp AMPERSAND                                                      &trans  &trans     &trans         &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp SV_LESS_THAN  &kp SV_SLASH    &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &trans  &trans     &trans         &trans  &trans  &trans     &trans         &trans  &trans  &kp RIGHT_SHIFT
+                                                    &kp LEFT_ALT    &kp LCTRL          &trans                   &trans  &kp ENTER  &kp BACKSPACE  &trans  &trans  &kp RCTRL  &kp RIGHT_ALT
             >;
         };
 
         right {
             bindings = <
-&kp N0          &kp N1                &kp N2               &kp N3            &kp N4              &kp N5                                                                     &kp N6  &kp N7     &kp N8    &kp N9  &kp QUESTION  &trans
-&none           &none                 &none                &none             &none               &kp PIPE                                                                   &trans  &trans     &trans    &trans  &trans        &trans
-&kp LEFT_SHIFT  &kp SV_RIGHT_BRACKET  &kp SV_GREATER_THAN  &kp SV_BACKSLASH  &kp SV_RIGHT_BRACE  &kp SV_RIGHT_PARENTHESIS  &trans  &trans          &trans           &trans  &trans  &trans     &trans    &trans  &trans        &kp RIGHT_SHIFT
-                                                           &kp LALT          &kp LCTRL           &kp LGUI                  &trans  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &trans  &trans  &kp RCTRL  &kp RALT
+&kp N0          &kp N1                &kp N2               &kp N3            &kp N4              &kp N5                                                               &kp N6  &kp N7     &kp N8    &kp N9  &kp QUESTION  &trans
+&none           &none                 &none                &none             &none               &kp PIPE                                                             &trans  &trans     &trans    &trans  &trans        &trans
+&kp LEFT_SHIFT  &kp SV_RIGHT_BRACKET  &kp SV_GREATER_THAN  &kp SV_BACKSLASH  &kp SV_RIGHT_BRACE  &kp SV_RIGHT_PARENTHESIS  &trans  &trans      &trans         &trans  &trans  &trans     &trans    &trans  &trans        &kp RIGHT_SHIFT
+                                                           &kp LALT          &kp LCTRL           &kp LGUI                  &trans  &kp RETURN  &kp BACKSPACE  &trans  &trans  &kp RCTRL  &kp RALT
             >;
         };
     };
