@@ -35,7 +35,7 @@
                           &kp ESC  &kp LEFT_ALT  &kp LEFT_GUI  &kp SV_SPACE  &kp ENTER  &kp BACKSPACE  &kp ESC  &kp RIGHT_GUI  &kp RALT  &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp SV_K SV_J>;
+            sensor-bindings = <&inc_dec_kp UP DOWN_ARROW>;
         };
 
         left {
@@ -51,6 +51,8 @@
 &kp LEFT_SHIFT  &kp SV_LEFT_BRACKET  &kp SV_LESS_THAN  &kp SV_SLASH    &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &none         &none      &mkp LCLK  &mkp RCLK  &none                 &none              &none      &none  &none  &kp RSHFT
                                                        &kp ESC         &kp LEFT_ALT       &kp LEFT_GUI             &kp SV_SPACE  &kp ENTER  &kp DEL    &kp ESC    &kp RIGHT_GUI         &kp RALT           &kp RCTRL
             >;
+
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT_ARROW>;
         };
 
         right {
@@ -60,6 +62,8 @@
 &kp LEFT_SHIFT  &kp SV_RIGHT_BRACKET  &kp SV_GREATER_THAN  &kp SV_BACKSLASH  &kp SV_RIGHT_BRACE  &kp SV_RIGHT_PARENTHESIS  &none         &none       &none          &none    &none                 &none                &none      &none      &none      &kp RIGHT_SHIFT
                                                            &kp ESC           &kp LEFT_ALT        &kp LGUI                  &kp SV_SPACE  &kp RETURN  &kp BACKSPACE  &kp ESC  &kp RGUI              &kp RIGHT_ALT        &kp RCTRL
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
